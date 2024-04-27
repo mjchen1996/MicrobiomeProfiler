@@ -27,7 +27,8 @@ Imports:
     ggplot2,
     graphics,
     stats,
-    utils
+    utils,
+    yulab.utils
 Encoding: UTF-8
 biocViews: Microbiome, Software, Visualization,KEGG
 RoxygenNote: 7.2.3
