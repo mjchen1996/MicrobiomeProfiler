@@ -2,10 +2,28 @@
 % Please edit documentation in R/MicrobiomeProfiler-package.R
 \docType{package}
 \name{MicrobiomeProfiler-package}
-\alias{MicrobiomeProfiler-package}
 \alias{MicrobiomeProfiler}
-\title{Functional enrichment analysis for microbiome data}
+\alias{MicrobiomeProfiler-package}
+\title{MicrobiomeProfiler: An R/shiny package for microbiome functional enrichment analysis}
 \description{
-The package implements an shiny application for functional enrichment
-analysis and visualiztion of microbiome studies.
+This is an R/shiny package to perform functional enrichment analysis for microbiome data. This package was based on clusterProfiler. Moreover, MicrobiomeProfiler support KEGG enrichment analysis, COG enrichment analysis, Microbe-Disease association enrichment analysis, Metabo-Pathway analysis.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/YuLab-SMU/MicrobiomeProfiler/}
+  \item \url{https://yulab-smu.top/contribution-knowledge-mining/}
+  \item Report bugs at \url{https://github.com/YuLab-SMU/MicrobiomeProfiler/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Guangchuang Yu \email{guangchuangyu@gmail.com} (\href{https://orcid.org/0000-0002-6485-8781}{ORCID})
+
+Authors:
+\itemize{
+  \item Meijun Chen \email{mjchen1996@outlook.com} (\href{https://orcid.org/0000-0003-2486-8106}{ORCID})
+}
+
+}
+\keyword{internal}

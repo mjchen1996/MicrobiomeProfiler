@@ -1,4 +1,5 @@
 ## Extend readLines() for parsing a remote .gz format file.
+#' @importFrom utils download.file
 #' @keywords internal
 readLines_gzfile <- function(url, ...) {
     gzf <- tempfile(fileext = ".gz")
@@ -11,7 +12,6 @@ readLines_gzfile <- function(url, ...) {
 
 ## PubChem Resource Description Framework Api
 #' @importFrom yulab.utils yread
-#' @keywords internal
 pubchem_rest <- function(rest_url) {
     message("Reading PubChem RDF online: \"", rest_url, "\"...")
     content <- yread(rest_url, reader = readLines_gzfile)
@@ -26,8 +26,7 @@ pubchem_rest <- function(rest_url) {
 
 ## Download PubChem annotation of the latest version of PubChem pathway and
 ## stored in a 'GSON' object.
-#' @param rm.protein remove protein nodes in PubChem pathway, defualt TRUE.
-#' @keywords internal
+# @param rm.protein remove protein nodes in PubChem pathway, defualt TRUE.
 gson_PubChemPathway <- function(rm.protein = TRUE) {
     url <- "https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/pathway/pc_pathway.ttl.gz"
     pc_pw <- pubchem_rest(url)

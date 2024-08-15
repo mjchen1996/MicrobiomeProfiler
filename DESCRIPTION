@@ -1,16 +1,16 @@
 Package: MicrobiomeProfiler
 Title: An R/shiny package for microbiome functional enrichment analysis
-Version: 1.11.0
+Version: 1.11.1
 Authors@R: c(
-    person(given = "Guangchuang", family = "Yu", email = "guangchuangyu@gmail.com", role  = c("aut", "ths"), comment = c(ORCID = "0000-0002-6485-8781")),
-    person(given = "Meijun",family = "Chen",role = c("aut", "cre"),email = "mjchen1996@outlook.com",comment = c(ORCID = "0000-0003-2486-8106"))    
+    person(given = "Guangchuang", family = "Yu", email = "guangchuangyu@gmail.com", role  = c("cre", "aut"), comment = c(ORCID = "0000-0002-6485-8781")),
+    person(given = "Meijun",family = "Chen", role = "aut", email = "mjchen1996@outlook.com", comment = c(ORCID = "0000-0003-2486-8106"))    
     )
 Description: This is an R/shiny package to perform functional enrichment analysis for microbiome data. 
              This package was based on clusterProfiler. Moreover, MicrobiomeProfiler support KEGG enrichment analysis,
              COG enrichment analysis, Microbe-Disease association enrichment analysis, Metabo-Pathway analysis.
 License: GPL-2
-URL: https://github.com/YuLab-SMU/MicrobiomeProfiler/
-BugReports: https://github.com/YuLab-SMU/MicrobiomeProfiler/issues
+Depends: 
+    R (>= 4.2.0)
 Imports: 
     clusterProfiler (>= 4.5.2),
     config,
@@ -29,15 +29,15 @@ Imports:
     stats,
     utils,
     yulab.utils
-Encoding: UTF-8
-biocViews: Microbiome, Software, Visualization,KEGG
-RoxygenNote: 7.2.3
-Depends: 
-    R (>= 4.2.0)
 Suggests: 
     rmarkdown,
     knitr,
     testthat (>= 3.0.0),
     prettydoc
+Encoding: UTF-8
+biocViews: Microbiome, Software, Visualization,KEGG
+RoxygenNote: 7.3.2
+URL: https://github.com/YuLab-SMU/MicrobiomeProfiler/, https://yulab-smu.top/contribution-knowledge-mining/
+BugReports: https://github.com/YuLab-SMU/MicrobiomeProfiler/issues
 Config/testthat/edition: 3
 VignetteBuilder: knitr
