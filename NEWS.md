@@ -1,3 +1,7 @@
+# MicrobiomeProfiler 1.10.1
+
++ Bioconductor RELEASE_3_20 (2024-10-30, Wed)
+
 # MicrobiomeProfiler 1.11.1
 
 + support gson for PubChem Pathway (2024-08-16, Fri, #6)
